@@ -24,6 +24,10 @@ const AppRoutes = () => {
         <Routes>
           <Route path="/*" element={<Home />} />
           <Route to="/home" element={<Home />} />
+          <Route 
+            to="/clicker"
+            element={<Clicker />}
+          />
         </Routes>
       ) : (
         <Routes>
@@ -40,7 +44,7 @@ const AppRoutes = () => {
             element={<AuthForm name="signup" displayName="Sign Up" />}
           />
           <Route 
-            path="/clicker"
+            to="/clicker"
             element={<Clicker />}
           />
         </Routes>
